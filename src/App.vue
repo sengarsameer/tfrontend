@@ -193,7 +193,7 @@ export default {
   data() {
     return {
       loading: false,
-      r_id: "",
+      r_id: "0",
       d_id: "",
       u_id: "",
       u_name: "",

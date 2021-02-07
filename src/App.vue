@@ -11,7 +11,7 @@
 				  <h6 class="card-header">Create New People</h6>
                 <div class="card-body">
                   
-                  <form action="http://localhost:3000/api/people" method="POST">
+                  <form action="https://crud-backend-people.herokuapp.com/api/people" method="POST">
                     <div class="form-group">
                       <label for="name">Your Name: </label>
                       <input
@@ -198,7 +198,7 @@ export default {
   methods: {
     fetchAllData() {
       this.axios
-        .get("http://localhost:3000/api/people")
+        .get("https://crud-backend-people.herokuapp.com/api/people")
         .then((response) => {
           this.Results = response.data.Result;
           this.Message = response.data.Message;
@@ -214,7 +214,7 @@ export default {
     },
     createData() {
       this.axios
-        .post("http://localhost:3000/api/people", {
+        .post("https://crud-backend-people.herokuapp.com/api/people", {
           name: this.name,
           email: this.email,
         })
@@ -233,7 +233,7 @@ export default {
     },
     fetchData() {
       this.axios
-        .get("http://localhost:3000/api/people/" + this.r_id)
+        .get("https://crud-backend-people.herokuapp.com/api/people/" + this.r_id)
         .then((response) => {
           this.Results = response.data.Result;
           this.Message = response.data.Message;
@@ -249,7 +249,7 @@ export default {
     },
     updateData() {
       this.axios
-        .put("http://localhost:3000/api/people/" + this.u_id, {
+        .put("https://crud-backend-people.herokuapp.com/api/people/" + this.u_id, {
           newName: this.u_name,
         })
         .then((response) => {
@@ -267,7 +267,7 @@ export default {
     },
     deleteData() {
       this.axios
-        .delete("http://localhost:3000/api/remove/" + this.d_id)
+        .delete("https://crud-backend-people.herokuapp.com/api/remove/" + this.d_id)
         .then((response) => {
           this.Results = response.data.Result;
           this.Message = response.data.Message;

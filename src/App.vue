@@ -220,6 +220,7 @@ export default {
         .catch((err) => {
           this.Message = err;
           this.Results = [];
+          this.Request = {};
           this.textColor = "red";
         })
         .finally(() => {
@@ -243,6 +244,7 @@ export default {
         .catch((err) => {
           this.Message = err;
           this.Results = [];
+          this.Request = {};
           this.textColor = "red";
         })
         .finally(() => {
@@ -265,6 +267,7 @@ export default {
         .catch((err) => {
           this.Message = err;
           this.Results = [];
+          this.Request = {};
           this.textColor = "red";
         })
         .finally(() => {
@@ -290,6 +293,7 @@ export default {
         .catch((err) => {
           this.Message = err;
           this.Results = [];
+          this.Request = {};
           this.textColor = "red";
         })
         .finally(() => {
@@ -312,6 +316,7 @@ export default {
         .catch((err) => {
           this.Message = err;
           this.Results = [];
+          this.Request = {};
           this.textColor = "red";
         })
         .finally(() => {

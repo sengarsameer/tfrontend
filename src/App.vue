@@ -23,6 +23,7 @@
                           name="name"
                           placeholder="People"
                           v-model="name"
+                          required
                         />
                       </div>
                       <div class="form-group">
@@ -35,6 +36,7 @@
                           aria-describedby="emailHelp"
                           placeholder="people@mail.com"
                           v-model="email"
+                          required
                         />
                       </div>
                       <button
@@ -62,6 +64,7 @@
                           name="ID"
                           placeholder="ID"
                           v-model="u_id"
+                          required
                         />
                       </div>
                       <div class="form-group">
@@ -72,6 +75,7 @@
                           name="name"
                           placeholder="New Name"
                           v-model="u_name"
+                          required
                         />
                       </div>
                       <button
@@ -100,6 +104,7 @@
                           name="ID"
                           placeholder="ID"
                           v-model="r_id"
+                          required
                         />
                       </div>
                       <button
@@ -126,6 +131,7 @@
                           name="ID"
                           placeholder="ID"
                           v-model="d_id"
+                          required
                         />
                       </div>
                       <button
